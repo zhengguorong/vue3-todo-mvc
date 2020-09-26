@@ -147,27 +147,7 @@ function useTodo() {
 
 export default defineComponent({
   setup() {
-    const {
-      todos,
-      newTodo,
-      remaining,
-      addTodo,
-      removeTodo,
-      removeCompleted,
-      visibility,
-      filterTodos
-    } = useTodo();
-
-    return {
-      todos,
-      remaining, // 还需要处理的任务
-      newTodo,
-      visibility,
-      addTodo,
-      removeTodo,
-      removeCompleted,
-      filterTodos
-    };
+    return useTodo();
   },
 });
 </script>
